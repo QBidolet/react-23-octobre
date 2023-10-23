@@ -9,7 +9,7 @@ class Parent extends Component{
         }
     }
 
-    handleButtonClick = () => {
+    handleButtonClick = (variable_1, variable_2) => {
         this.setState({data: "Données modifiées."});
     }
 

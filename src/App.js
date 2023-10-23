@@ -4,6 +4,7 @@ import './App.css';
 // import Calculatrice from "./components/01-components/Calculatrice";
 // import Parent from "./components/02-communication-inter-composants/Parent";
 import Binding from "./components/02-communication-inter-composants/Binding";
+import CycleDeVie from './components/02-communication-inter-composants/CycleDeVie';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
   //  <ExempleComposant></ExempleComposant>
   // <Calculatrice></Calculatrice>
   // <Parent></Parent>
-  <Binding></Binding>
+  // <Binding></Binding>
+  <CycleDeVie></CycleDeVie>
   );
 }
 
