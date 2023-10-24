@@ -16,15 +16,20 @@ class Todo extends Component {
         this.setState({tasks: [...this.state.tasks, task] });
     }
 
+   
     deleteTask = (index) => {
         const updatedTasks = this.state.tasks.filter((task, i) => i !== index);
         this.setState({tasks: updatedTasks});
+        // this.setState((prevState)=>{
+        //     const updatedTasks = prevState.tasks.filter((task, i) => i !== index);
+        //     return {tasks: updatedTasks};
+        // });        
     }
 
     toggleTask = (index) => {
         const updatedTasks = this.state.tasks.map((task, i) => {
             if(i === index){
-                task.completed = !task.completed;
+                task.completed = true;
             }
             return task;
         })
@@ -36,9 +41,7 @@ class Todo extends Component {
         return(
             <div>
                 <TaskForm addTask={this.addTask}/>
-                <TaskList tasks={this.state.tasks}
-                deleteTask={this.deleteTask} 
-                toggleTask={this.toggleTask}/>
+                <TaskList tasks={this.state.tasks} deleteTask={this.deleteTask}/>
             </div>
         )
     }
