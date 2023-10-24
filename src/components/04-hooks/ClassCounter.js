@@ -10,8 +10,18 @@ class ClassCounter extends Component {
     }
 
     incrementCount(){
-        this.setState((prevState)=>({count: prevState.count + 1}));
+        this.setState((prevState)=>({counter: prevState.counter + 1}));
         // this.setState({counter: this.counter + 1});
+    }
+
+    render () {
+        return(
+            <div>
+                <h1>Compteur avec une classe</h1>
+                <p>Compte : {this.state.counter}</p>
+                <button onClick={this.incrementCount}>Incrémenter</button>
+            </div>
+        )
     }
 }
 
