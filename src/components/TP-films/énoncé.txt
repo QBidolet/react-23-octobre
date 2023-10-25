@@ -1,0 +1,24 @@
+Créer une application permettant de voter pour des films.
+
+Afficher les films avec le titre, le nombre de votes et un bouton "Voter".
+
+Base:
+Utilisez les états pour gérer les données des films et le nombre de votes.
+Passez les fonctions de gestion des événements en tant que props entre les composants pour gérer les interactions.
+
+Pour aller plus loin :
+Utilisez le context.
+Gérez le context pour qu'il contienne l'état des films et la fonction pour gérer les votes.
+Partagez les données du contexte avec les composants enfants.
+
+
+
+
+
+
+
+
+
+
+
+
