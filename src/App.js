@@ -1,3 +1,4 @@
+import {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 import ExempleJSX from './components/02-communication-inter-composants/ExempleJSX';
@@ -12,8 +13,13 @@ import DemoUseEffect from './components/04-hooks/DemoUseEffect';
 // import Binding from "./components/02-communication-inter-composants/Binding";
 // import CycleDeVie from './components/02-communication-inter-composants/CycleDeVie';
 import Users from './components/04-hooks/tp-users/Users'
+import ErrorBoundary from './components/05-gestion-des-erreurs/ErrorBoundary';
+import ThemeSwitcher from './components/06-context/ThemeSwitcher';
+import ThemeContext from './components/06-context/ThemeContext';
+import Liste from "./components/07-hoc/Liste";
 
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
   //  <ExempleComposant></ExempleComposant>
   // <Calculatrice></Calculatrice>
@@ -26,7 +32,14 @@ function App() {
   //<SwapiCharacter></SwapiCharacter>
   //<ClassCounter></ClassCounter>
   //<DemoUseEffect></DemoUseEffect>
-  <Users></Users>
+  // <ErrorBoundary>
+  //     <Users></Users>
+  // </ErrorBoundary>
+  // <ThemeContext.Provider value={{theme, setTheme}}>
+  //   <ThemeSwitcher></ThemeSwitcher>
+  // </ThemeContext.Provider>
+  <Liste></Liste>
+
   );
 }
 
