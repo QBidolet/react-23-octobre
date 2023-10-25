@@ -17,6 +17,8 @@ import ErrorBoundary from './components/05-gestion-des-erreurs/ErrorBoundary';
 import ThemeSwitcher from './components/06-context/ThemeSwitcher';
 import ThemeContext from './components/06-context/ThemeContext';
 import Liste from "./components/07-hoc/Liste";
+import Films from "./components/TP-films/Films";
+import { FilmProvider } from "./components/TP-films/FilmContext";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -38,8 +40,11 @@ function App() {
   // <ThemeContext.Provider value={{theme, setTheme}}>
   //   <ThemeSwitcher></ThemeSwitcher>
   // </ThemeContext.Provider>
-  <Liste></Liste>
-
+  // <Liste></Liste>
+  
+  <FilmProvider>
+      <Films></Films>
+  </FilmProvider>
   );
 }
 
