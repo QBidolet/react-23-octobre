@@ -1,6 +1,6 @@
 import React , { useState } from "react";
 
-function FonctionCounter(){
+function FonctionCounter(props){
     const [counter, setCounter] = useState(0);
 
     function incrementCounter(){

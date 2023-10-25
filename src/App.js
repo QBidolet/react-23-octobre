@@ -11,7 +11,7 @@ import DemoUseEffect from './components/04-hooks/DemoUseEffect';
 // import Parent from "./components/02-communication-inter-composants/Parent";
 // import Binding from "./components/02-communication-inter-composants/Binding";
 // import CycleDeVie from './components/02-communication-inter-composants/CycleDeVie';
-
+import Users from './components/04-hooks/tp-users/Users'
 
 function App() {
   return (
@@ -25,7 +25,8 @@ function App() {
   // <Todo></Todo>
   //<SwapiCharacter></SwapiCharacter>
   //<ClassCounter></ClassCounter>
-  <DemoUseEffect></DemoUseEffect>
+  //<DemoUseEffect></DemoUseEffect>
+  <Users></Users>
   );
 }
 
